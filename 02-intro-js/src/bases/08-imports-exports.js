@@ -12,12 +12,14 @@ const getHeroeById = (id) =>{
     return heroes.find(value => value.id === id );
 };
 
-console.log(getHeroeById(1));
+//console.log(getHeroeById(1));
 
 const getHeroeByOwner = (own) =>{
     return heroes.filter(value => value.owner === own );
 };
 
-console.log(getHeroeByOwner('DC'));
+//console.log(getHeroeByOwner('DC'));
 
-console.log(owners);
+//console.log(owners);
+
+export {getHeroeById as default, getHeroeByOwner};
