@@ -6,5 +6,5 @@ import './styles.css';
 
 ReactDOM.createRoot(document.getElementById('root'))
     .render(<React.StrictMode>
-        <FirstApp title='jesus' numero={123} />
+        <FirstApp  title = "jesus" numero={1}/>
     </React.StrictMode>);
