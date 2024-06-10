@@ -10,12 +10,12 @@ const experiencias=()=>{
  * @returns {JSX.Element}
  * @constructor
  */
-export const FirstApp = ({title, numero})=>{
+export const FirstApp = ({title, numero, editora})=>{
     return (
         <>
-            <h1>{ title }!</h1>
+            <h1>{title }!</h1>
             <p>{numero}</p>
-            <p>{experiencias()}</p>
+            <p>{editora}</p>
         </>
     );
 }
@@ -28,5 +28,17 @@ export const FirstApp = ({title, numero})=>{
 FirstApp.propTypes = {
     title: PropTypes.string.isRequired,
     numero: PropTypes.number,
+    editora: PropTypes.string
+}
+
+/**
+ * En caso de que no se envien los atributos se usa los defaultProps para establecer
+ * valores por defecto
+ * @type {{numero: number, title: string, editora: string}}
+ */
+FirstApp.defaultProps = {
+    numero: 0,
+    title: "felipe",
+    editora: "desconocido"
 }
 
