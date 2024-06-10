@@ -9,15 +9,11 @@ const experiencias=()=>{
  * @returns {JSX.Element}
  * @constructor
  */
-export const FirstApp = ()=>{
-    const {message,tittle} = {
-        message:'jesus!',
-        tittle:'programador web'
-    };
+export const FirstApp = ({title, numero})=>{
     return (
         <>
-            <h1>{ message }!</h1>
-            <p>{tittle}</p>
+            <h1>{ title }!</h1>
+            <p>{numero}</p>
             <p>{experiencias()}</p>
         </>
     );
