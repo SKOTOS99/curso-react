@@ -1,17 +1,18 @@
+import {useState} from "react";
 import PropTypes from "prop-types";
 
 
+
 export const CounterApp = ({numero}) => {
+    const [counter, setCounter ] = useState(numero);
 
     const count = ()=>{
-        let temo = 0;
-        temo = numero + 1;
-        console.log(temo)
+        setCounter(counter + 1);
     }
     return(
         <>
             <h1>CounterApp</h1>
-            <h2>{ numero }</h2>
+            <h2>{ counter }</h2>
             <button onClick={ count }>
                 +1
             </button>
