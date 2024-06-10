@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {FirstApp} from "./FirstApp.jsx";
 import './styles.css';
+import {CounterApp} from "./CounterApp.jsx";
 
 
 ReactDOM.createRoot(document.getElementById('root'))
     .render(<React.StrictMode>
-        <FirstApp  title = "jesus" numero={1} editora="economicos"/>
+        <CounterApp numero = {1}/>
     </React.StrictMode>);

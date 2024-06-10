@@ -1,9 +1,6 @@
 
 import PropTypes from "prop-types";
 
-const experiencias=()=>{
-    return 'mendoza';
-}
 /**
  * NO se puede mandar el objeto completo a un elemento html, se debe desestructurar o mandar por atributo
  * como objeto.mesagge
