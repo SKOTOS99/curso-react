@@ -9,13 +9,21 @@ export const CounterApp = ({numero}) => {
     const count = ()=>{
         setCounter(counter + 1);
     }
+    const removeOne = ()=>{
+        setCounter(counter - 1);
+    }
+
+    const resetCounter= ()=>{
+
+        setCounter(numero);
+    }
     return(
         <>
             <h1>CounterApp</h1>
-            <h2>{ counter }</h2>
-            <button onClick={ count }>
-                +1
-            </button>
+            <h2>{counter}</h2>
+            <button onClick={count}>+1</button>
+            <button onClick={removeOne}>-1</button>
+            <button onClick={resetCounter}>Reset</button>
         </>
     );
 }
