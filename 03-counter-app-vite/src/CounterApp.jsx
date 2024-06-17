@@ -12,9 +12,7 @@ export const CounterApp = ({numero}) => {
     const removeOne = ()=>{
         setCounter(counter - 1);
     }
-
     const resetCounter= ()=>{
-
         setCounter(numero);
     }
     return(
