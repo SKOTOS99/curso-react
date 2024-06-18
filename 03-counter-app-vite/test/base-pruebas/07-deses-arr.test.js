@@ -16,7 +16,7 @@ describe('debe retornar un arreglo', () => {
         const [letters, numbers] = retornaArreglo();
         expect(typeof letters).toBe('string');
         expect(typeof numbers).toBe('number');
-        //expect.any(Number) indica que espera cualquier tipo de numero
+
         expect(numbers).toStrictEqual(expect.any(Number));
         expect(letters).toStrictEqual(expect.any(String));
     })
